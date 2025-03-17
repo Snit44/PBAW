@@ -1,0 +1,3 @@
+Kwota kredytu: od 1000 do 100 000
+Okres kredytowania: od 0 do 10 lat
+Oprocentowanie kredytu: nie mniej niż 10%
