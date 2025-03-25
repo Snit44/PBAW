@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+	
+	<title>Project BPAW</title>
+
+	<link rel="shortcut icon" href="assets/images/logo2.jpg">
+	
+	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+	<!-- Custom styles for our template -->
+	<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
+	<link rel="stylesheet" href="assets/css/main.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+</head>
+
+<body class="home">
+	<!-- Fixed navbar -->
+	<div class="navbar navbar-inverse navbar-fixed-top headroom">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- Button for smallest screens -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <a class="navbar-brand" href="index.html"><img src="/assets/images/logo.jpg" ></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav pull-right">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a class="btn" href="#login-section">SIGN IN</a></li> 
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+	<!-- /.navbar -->
+
+	<!-- Header -->
+	<header id="head">
+		<div class="container">
+			<div class="row">
+				<h1 class="lead">Kalkulator kredytowy</h1>
+				<p class="tagline">Zaloguj się, aby kontynuować</p>
+				<p><a class="btn btn-action btn-lg" role="button" href="#login-section">SIGN IN</a></p> 
+			</div>
+		</div>
+	</header>
+	<!-- /Header -->
+    <div class="container">
+        <h2 class="text-center top-space">Warunki Użytkowania i Ograniczenia</h2>
+        <br>
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>Ograniczenia dla przeciętnego użytkownika</h3>
+                <p>Kwota kredytu: od 1000 do 100 000</p>
+                <p>Okres kredytowania: od 0 do 10 lat</p>
+                <p>Oprocentowanie kredytu: nie mniej niż 10%</p>
+            </div>
+        </div> <!-- /row -->
+        <div class="row">
+            <div class="col-sm-6">
+                <h3></h3>
+                <p></p> 
+            </div>
+            <div class="col-sm-6">
+                <h3>Ograniczenia dla administratora</h3>
+                <p>Nie ma żadnych ograniczeń</p>
+                <p>Administrator może wprowadzać i obliczać dowolne dane</p>
+                <p></p>
+            </div>
+        </div>
+        <div style="height: 60px;"></div> <!-- Пустой блок для отступа -->
+    </div>
+  
+
+<div id="login-section" class="login-container">
+    <div class="login-box">
+        <h2>Login</h2>
+        <form action="app/security/login.php" method="POST">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" name="login" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="pass" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+    
+	<footer id="footer" class="top-space">
+		<div class="footer1">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 widget">
+						<h3 class="widget-title">Follow me</h3>
+						<div class="widget-body">
+							<p class="follow-me-icons">
+								<a href="https://github.com/Snit44/PBAW"><i class="fa fa-github fa-2"></i></a> <!-- Восстановлена ссылка на GitHub -->
+							</p>	
+						</div>
+					</div>
+
+					<div class="col-md-6 widget">
+						<h3 class="widget-title">About project</h3>
+						<div class="widget-body">
+							<p>Projekt powstał w celu szkolenia z przedmiotu Projektowanie bazodanowych aplikacji webowych.</p>
+						</div>
+					</div>
+
+				</div> 
+			</div>
+		</div>
+	</footer>	
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script src="assets/js/headroom.min.js"></script>
+	<script src="assets/js/jQuery.headroom.min.js"></script>
+	<script src="assets/js/template.js"></script>
+</body>
+</html>
