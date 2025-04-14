@@ -1,6 +1,7 @@
 <?php
+
 class Messages {
-    public $messages = [];
+    private $messages = [];
 
     public function add($message) {
         $this->messages[] = $message;
@@ -9,5 +10,12 @@ class Messages {
     public function isEmpty() {
         return empty($this->messages);
     }
+
+    public function getMessages() {
+        return $this->messages;
+    }
+
+    public function clear() {
+        $this->messages = [];
+    }
 }
-?>

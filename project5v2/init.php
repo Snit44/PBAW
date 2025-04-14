@@ -1,11 +1,12 @@
 <?php
 require_once __DIR__ . '/config.php';
 
+use Smarty\Smarty; 
+
 spl_autoload_register(function ($class) {
 
     $paths = [
-        _ROOT_PATH . '/app/controllers/',   
-        _ROOT_PATH . '/app/lib/',          
+        _ROOT_PATH . '/app/controllers/',           
         _ROOT_PATH . '/app/security/',      
     ];
 
@@ -21,7 +22,6 @@ spl_autoload_register(function ($class) {
 
 });
 
-
 session_start();
 
 require_once _ROOT_PATH . '/core/functions.php';
@@ -30,7 +30,7 @@ if (!isset($msgs)) {
     $msgs = new Messages();
 }
 
-require_once _SMARTY_PATH . '/Smarty.class.php';
+require_once _ROOT_PATH . '/Smarty.class.php';
 $smarty = new Smarty();
 
 $smarty->setTemplateDir(_ROOT_PATH . '/app/views/templates'); 

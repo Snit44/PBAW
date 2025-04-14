@@ -9,7 +9,7 @@ define('_APP_PATH', _ROOT_PATH . '/app');
 define('_CONTROLLER_PATH', _APP_PATH . '/controllers');
 define('_SECURITY_PATH', _APP_PATH . '/security');
 define('_VIEW_PATH', _APP_PATH . '/views/templates');
-define('_SMARTY_DIR', _ROOT_PATH . '/smarty/libs'); 
+define('_SMARTY_DIR', _ROOT_PATH . '/smarty');
 define('_CORE_PATH', _ROOT_PATH . '/core');
 define('_ASSETS_PATH', _ROOT_PATH . '/assets');
 
